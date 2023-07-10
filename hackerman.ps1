@@ -12,12 +12,7 @@ while($true) {
         switch($caps){
             $true {$global:string = $global:string + $CAPSABC[$global:RANDOM]}
             $false {$global:string = $global:string + $lowabc[$global:RANDOM]}
-
         }
     Write-Host $global:STRING -ForegroundColor Green
     }
-    
-
-
-
 }
