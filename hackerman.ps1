@@ -9,7 +9,6 @@ while($true) {
     $global:STRING = ""
     for($i = 0; $i -ne $lenght; $i++ ){
         $type = "uppercase", "lowercase", "number" | Get-Random
-        #$global:RANDOM = Get-Random -Minimum 0 -Maximum 25
         switch($type){
             "uppercase" {$global:RANDOM = Get-Random -Minimum 0 -Maximum 25; $global:STRING = $global:STRING + $CAPSABC[$global:RANDOM]}
             "lowercase" {$global:RANDOM = Get-Random -Minimum 0 -Maximum 25; $global:STRING = $global:STRING + $lowabc[$global:RANDOM]}
@@ -17,7 +16,7 @@ while($true) {
         }
     }
     Start-Sleep -Milliseconds $global:SPEED
-    if($global:SPEED -ne 0){
+    if($global:SPEED -ge 100){
     $global:SPEED = $global:SPEED - 100
     }
     Write-Host $global:STRING -ForegroundColor Green
