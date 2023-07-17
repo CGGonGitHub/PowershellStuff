@@ -1,5 +1,6 @@
-Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartYes.ps1' -OutFile Documents\SEXWARE\AfterRestartYes.ps1
-Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartNo.ps1' -OutFile Documents\SEXWARE\AfterRestartNo.ps1
+cd Documents\SEXWARE
+Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartYes.ps1' -OutFile .\AfterRestartYes.ps1
+Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartNo.ps1' -OutFile .\AfterRestartNo.ps1
 
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 $Result = [System.Windows.MessageBox]::Show('Du wurdest gehackt! Willst du jetzt neustarten? >:)' ,'Tschau Kakao' ,'YesNo' ,'Warning')
