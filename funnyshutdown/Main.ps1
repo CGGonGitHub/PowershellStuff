@@ -1,4 +1,3 @@
-cd Documents\SEXWARE
 Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartYes.ps1' -OutFile .\AfterRestartYes.ps1
 Invoke-WebRequest 'https://raw.githubusercontent.com/CGGonGitHub/PowershellStuff/main/funnyshutdown/AfterRestartNo.ps1' -OutFile .\AfterRestartNo.ps1
 
