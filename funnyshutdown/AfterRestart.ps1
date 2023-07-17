@@ -1,5 +1,5 @@
 Add-Type -AssemblyName PresentationCore, PresentationFramework
-$content = Get-Content -Path .\Documents\SEXWARE\YesNo.txt
+$content = Get-Content -Path \Documents\SEXWARE\YesNo.txt
 switch($content){
     'Yes'{
         $Result = [System.Windows.MessageBox]::Show('Sorry dafür, war ausversehen' ,'Sorry bruder' ,'Ok' ,'Information')
