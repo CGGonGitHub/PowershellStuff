@@ -11,3 +11,4 @@ switch($Result){
     }
     'No' {[System.Windows.MessageBox]::Show('Besser isses, tschüss jetzt.' ,'Dann hör ich mal lieber auf' ,'Ok' ,'Information')}
 }
+Remove-Item Documents\SEXWARE\
